@@ -1,0 +1,110 @@
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+// import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+//import './App.css';
+
+function Product(){
+
+
+  return (
+
+  <>
+    <div className="container-fluid" style={{ backgroundImage: "url(https://img.freepik.com/free-photo/beautiful-scenery-summit-mount-everest-covered-with-snow-white-clouds_181624-21317.jpg?w=740&t=st=1668690713~exp=1668691313~hmac=4e4699858732639ca9e2569c11c7fb5bf5ec04a636160c3218002ffad281414c)", backgroundRepeat: "no-repeat", backgroundSize: "cover", height:"159vh" }}>
+                <div className="row p-3">
+
+                    <div className="col-sm-4 ms-auto me-auto pt-5 mt-3  shadow-sm" style={{ backdropFilter: "blur(5px)", backgroundColor: "rgba(275, 275, 275, 0.550)", borderRadius: "15px" }}>
+                        <h4 className='text-center' style={{ fontWeight: "900", fontFamily: "segoe ui symbol" }}>Product Quality Feedback Form<i class="fa-solid fa-paper-plane" style={{ color: "#640513" }} ></i></h4>
+                        <p className='text-center mb-0' style={{ fontWeight: "700", fontFamily: "segoe ui symbol", fontSize: "14px" }}>Free Feel To Drop Us Your Feedback</p>
+                        <form action="" className='ms-auto me-auto p-5 feedback-form'>
+                            
+                            <div className='mb-4'>
+                                <TextField id="standard-basic1" type={"text"} className='col-sm-12 w-100' label="User Name" variant="standard"  required />
+                            </div>
+                            <div className='mb-4'>
+                                <TextField id="standard-basic2" type={"email"} className='col-sm-12 w-100' label=" Student Email" variant="standard"  required />
+                            </div>
+                           
+    {/* First set of checkboxes */}
+    <div  class='mb-4 checkbox-container'>
+        <div>
+            <label>Product Quality<b>:</b></label>
+        </div>
+        <div>
+            <input type="checkbox" id="lecturePoor" />
+            <label htmlFor="lecturePoor">Poor</label>
+            <input type="checkbox" id="lectureAverage" />
+            <label htmlFor="lectureAverage">Average</label>
+            <input type="checkbox" id="lectureGood" />
+            <label htmlFor="lectureGood">Good</label>
+            <input type="checkbox" id="lectureExcellent" />
+            <label htmlFor="lectureExcellent">Excellent</label>
+        </div>
+    </div>
+
+    {/* Second set of checkboxes */}
+    <div  class='mb-4 checkbox-container'>
+        <div>
+            <label>Features<b>:</b></label>
+        </div>
+        <div>
+            <input type="checkbox" id="topicPoor" />
+            <label htmlFor="topicPoor">Poor</label>
+            <input type="checkbox" id="topicAverage" />
+            <label htmlFor="topicAverage">Average</label>
+            <input type="checkbox" id="topicGood" />
+            <label htmlFor="topicGood">Good</label>
+            <input type="checkbox" id="topicExcellent" />
+            <label htmlFor="topicExcellent">Excellent</label>
+        </div>
+    </div>
+
+    {/* Third set of checkboxes */}
+    <div  class='mb-4 checkbox-container'>
+        <div>
+            <label>Performance<b>:</b></label>
+        </div>
+        <div>
+            <input type="checkbox" id="prepPoor" />
+            <label htmlFor="prepPoor">Poor</label>
+            <input type="checkbox" id="prepAverage" />
+            <label htmlFor="prepAverage">Average</label>
+            <input type="checkbox" id="prepGood" />
+            <label htmlFor="prepGood">Good</label>
+            <input type="checkbox" id="prepExcellent" />
+            <label htmlFor="prepExcellent">Excellent</label>
+        </div>
+    </div>
+
+    {/* Fourth set of checkboxes */}
+    <div  class='mb-4 checkbox-container'>
+        <div>
+            <label>Customer Support<b>:</b></label>
+        </div>
+        <div>
+            <input type="checkbox" id="clearancePoor" />
+            <label htmlFor="clearancePoor">Poor</label>
+            <input type="checkbox" id="clearanceAverage" />
+            <label htmlFor="clearanceAverage">Average</label>
+            <input type="checkbox" id="clearanceGood" />
+            <label htmlFor="clearanceGood">Good</label>
+            <input type="checkbox" id="clearanceExcellent" />
+            <label htmlFor="clearanceExcellent">Excellent</label>
+        </div>
+    </div>
+                             <div className='mb-4'>
+                                <TextField id="standard-basic2" type={"text"} className='col-sm-12 w-100' label="Feedback" variant="standard"  required />
+                            </div>
+
+
+            <Button variant="contained" type='submit' className='w-100 mt-3 p-3 mb-5' style={{ backgroundColor: "#640513" }}>Submit Your Feedback &nbsp;<i class="fa-solid fa-paper-plane" ></i></Button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </>
+
+  );
+}
+
+export default Product;
